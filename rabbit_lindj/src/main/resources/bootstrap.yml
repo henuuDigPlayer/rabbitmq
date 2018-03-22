@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: rabbit-lindj
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+      name: rabbit-lindj
+      label: master
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.84:8000/eureka/
